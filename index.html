@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="heading">
+        <div class="title">
+           <h1>Temperature Converter</h1>
+        </div>
+    </div>
+    <div class="content">
+            <form id="tempCalc" onsubmit="calculateTemp(); return false">
+                <h2>Enter value to be convert:</h2>
+                <input type="number" placeholder="Value to convert" id="input" name="input" class="box">
+                <label class="to">Change To:</label>
+                <select name="typeto" id="typeto">
+                  <option value="" selected disabled he>Select</option>
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <div class="btn">
+                    <button type="submit" name="convert" class="press">Convert</button>
+                    <button id="clear" class="press">Reset</button>
+                </div>
+                <input type="text" id="output" class="box">
+            </form>   
+    </div>
+    <footer>&copy;Shankar||2022</footer>
+    <script src="script.js"></script>
+</body>
+</html>
