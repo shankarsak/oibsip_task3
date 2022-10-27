@@ -29,10 +29,12 @@
 }
 .content form {
     flex: 1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 1rem;
     border-radius: 30px;
-    width: auto;
+    width: 100%;
     height: auto;
     border: 10px solid  #33393D;
     background-color: #2AABE4;
